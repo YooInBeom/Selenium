@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -17,8 +18,13 @@ public class SearchTest {
     public void setup() {
 
         System.setProperty("chrome.driver",
-                "/src/test/resources/drivers/chromedriver");
-        driver = new ChromeDriver();
+                "./src/test/resources/drivers/chromedriver.exe");
+        
+        ChromeOptions options = new ChromeOptions();  
+        options.setHeadless(true);
+        
+        driver = new ChromeDriver(options);  
+        
         driver.get("http://demo-store.seleniumacademy.com/");
 
     }

@@ -15,10 +15,7 @@ public class NavigationTest {
     public void beforeMethod() {
 
         System.setProperty("chrome.driver",
-                "./src/test/resources/drivers/chromedriver");
-        
-        ChromeOptions chromeOptinons = new CrhomeOptions();
-        chromeOptions.setHeadless(true);
+                "./src/test/resources/drivers/chromedriver.exe");
 
         driver = new ChromeDriver();
     }
@@ -28,7 +25,7 @@ public class NavigationTest {
 
         driver.get("http://demo-store.seleniumacademy.com/");
 
-       // Assert.assertEquals(driver.getTitle(), "Madison Island");
+        Assert.assertEquals(driver.getTitle(), "Madison Island");
     }
 
     @AfterMethod
