@@ -3,13 +3,13 @@
 <suite thread-count="-1" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.example.NavigationTest">
+      <class name="com.example.SearchTest">
         <methods>
-          <include name="navigateToAUrl"/>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
+          <include name="setup"/>
+          <include name="searchProduct"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.example.NavigationTest -->
+      </class> <!-- com.example.SearchTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
