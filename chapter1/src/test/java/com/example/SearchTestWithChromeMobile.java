@@ -25,8 +25,8 @@ public class SearchTestWithChromeMobile {
 			"./src/test/resources/drivers/chromedriver");
 	
     Map<String, Object> deviceMetrics = new HashMap<>();
-    deviceMetrics.put("width", 411);
-    deviceMetrics.put("height", 823);
+    deviceMetrics.put("width", 420);
+    deviceMetrics.put("height", 840);
     deviceMetrics.put("pixelRatio", 3.0);
 
 
@@ -34,7 +34,7 @@ public class SearchTestWithChromeMobile {
     mobileEmulation.put("deviceMetrics", deviceMetrics);
     mobileEmulation.put("userAgent", "Mozilla/5.0 (Linux; Android 6.0; "
     		+ "Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) "
-    		+ "Chrome/98.0.4758.109 Mobile Safari/537.36");
+    		+ "Chrome/99.0.4844.51 Mobile Safari/537.36");
 
     ChromeOptions chromeOptions = new ChromeOptions();
     chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
